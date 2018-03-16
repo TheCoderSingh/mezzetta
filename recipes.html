@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Idea Center - Recipes | Mezzetta.com | Don't Forgetta Mezzetta</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/modernizr.custom.63321.js"></script>
+		<link rel="stylesheet" type="text/css" href="slider/style.css">
+		<link rel="stylesheet"  href="slider/src/css/lightslider.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    	<script src="slider/src/js/lightslider2.js"></script> 
+    	<script>
+    		$(document).ready(function() {
+				$("#content-slider").lightSlider({
+	                loop:true,
+	                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+			});
+    	</script>
+	</head>
+	<body>
+		<div id="greybar"></div>
+		<div id="topbar">
+			<div id="shopbtn">
+				<a href="#"><img src="images/shop-btn.png"></a>
+			</div>
+			<div id="social">
+				<div id="fbicon">
+					<img src="images/facebook-icon.png">
+				</div>
+				<div class="socitext">
+					<a href="#">Like Us &#187;</a>
+				</div>
+				<div id="twicon">
+					<img src="images/twitter-icon.png">
+				</div>
+				<div class="socitext">
+					<a href="#">Follow Us &#187;</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/main-logo.png" style="float: left;"></a>	
+			</div>
+			<div id="topright">
+				<div style="float:left; margin-top:-42px;">
+					<img src="images/feature-product-title.png">
+					<p id="bannertext"  style="margin-top: -22px;">FEATURE PRODUCT</p>
+					<p id="toprighthead">Marinara</p>
+					<p id="toprightpara">Pasta, perfected. When you use the<br> world&#8217;s best tomatoes, you don&#8217;t<br>need much more. That&#8217;s why...</p>
+					<p id="toplink"><a href="#">GET TIPS & RECIPES ></a></p>
+				</div>
+				<div id="topimage">
+					<img src="images/286-Premium-Marinara-prod_65_104.png">
+				</div>
+			</div>
+		</div>
+		<div id="outermenu">
+				<div id="innermenu">
+			    	<div id="mymenu">
+			        	<ul style="left: -13px;">
+				        	<li><a href="recipes.html">RECIPES</a>
+				            	<ul>
+				                	<li>
+				                   		<a href="#">Recipes</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Tips</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Antipasti</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Pairings</a>
+				                    </li>
+				                </ul>
+			                </li>
+			            <li><a href="ourproducts.html" style="line-height:25px;padding-top: 10px;padding-left:25px;height: 58px;text-align:left;width: 120px;">OUR PRODUCTS</a></li>
+			            <li><a href="aboutus.html">ABOUT US</a>
+			            	<ul>
+				                	<li>
+				                   		<a href="#">About Us</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Our Brands</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Our History</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Mezetta & Health</a>
+				                    </li>
+				                    <li>
+				                    	<a href="#">Careers</a>
+				                    </li>
+				                </ul>
+			            </li>
+			            <li><a href="contact.html">CONTACT</a>
+			            	<ul>
+				                	<li>
+				                   		<a href="#">Contact</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Press Room</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Win a Free Gift Basket!</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">FAQs</a>
+				                    </li>
+				                </ul>
+			            </li>
+			          </ul>
+			        </div>
+			    <div id="searchbox">
+			    	<form>
+			    		<input type="text" placeholder="Enter a keyword here" class="search">
+			    		<input type="submit" value="GO" class="gobutton">
+			    		<div class="searchboxb">
+			    			<span class="searchpara">SEARCH:</span>
+			    			<input type="radio" name="radio1"><span class="searchpara">Products</span>
+			    			<input type="radio" name="radio1"><span class="searchpara">Recipes</span>
+			    		</div>
+			    	</form>
+			    </div>
+			    <div class="clear"></div>
+	    		</div>
+			</div>
+			<div id="content">
+				<div id="mezzepedia">
+					<h1>Recipes</h1>
+					<div class="clear"></div>
+					<p class="recipehead">Looking for something specific? Begin a new recipe search here:</a></p>
+					<form>
+					<input type="text" placeholder="Enter keyword and product names here" class="tbox" id="textbox"><span class="sp">in</span>	
+					<select placeholder="Enter keyword and product names here" class="tbox" style="background: url('images/bg-sel.png') repeat scroll 0 0 transparent; overflow: hidden; width: 240px;height: 37px; margin-right: 15px; ">
+						<option value="volvo">All Recipe Categories</option>
+  						<option value="saab">Comfort Food</option>
+  						<option value="mercedes">Appetizers</option>
+  						<option value="cock">Cocktails</option>
+  						<option vaue="dess">Desserts</option>
+  						<option value="37">Light and Healthy</option>
+						<option value="38">Main Dishes</option>
+						<option value="39">Top 20 Recipes</option>
+						<option value="46">Pizza</option>
+						<option value="40">Quick and Easy</option>
+						<option value="47">Salads</option>
+						<option value="45">Sides</option>
+						<option value="41">Sandwiches</option>
+					</select>
+					<input type="submit" value="GO" id="subgo"></form>
+					<div class="clear"></div>
+					<p style="line-height: 16px; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif; color: #514b46;">We've worked with our very own Mezzetta gourmet chefs, elite culinary institutions and with our fans to bring you some of the best dishes from around the globe in this one-of-a-kind recipe catalogue.  You'll find quick, healthy, and delicious eats that suit both the novice and masterchef alike. Find your inspiration now.</p>
+				</div>
+				<div id="slide" >
+					<div class="demo" style="width:620px;">
+				        <div class="item">            
+				        	<div class="clearfix" style="width:620px;">
+				            	<ul id="image-gallery" class="gallery list-unstyled cS-hidden"  class="slideimg">
+			                    	<li data-thumb="slider/img/thumb/beach_hp_85_55_c1.jpg"  class="slideimg"> 
+			                        	<img src="slider/img/beach_hp_884_411_80.jpg"   class="slideimg">
+			                    	</li>
+			                    	<li data-thumb="slider/img/thumb/JalapenoBurger_HP_85_55_c1.jpg" class="slideimg" > 
+			                        	<img src="slider/img/JalapenoBurger_HP_884_425_80.jpg"   class="slideimg">
+				                	</li>
+				                	<li data-thumb="slider/img/thumb/quote_HP_85_55_c1.jpg"  class="slideimg"> 
+					                    <img src="slider/img/quote_HP_884_425_80.jpg"  class="slideimg">
+					                </li>
+				                </ul>
+				            </div>
+			    	    </div>
+				    </div>
+			    </div>
+			    <div id="searchbycat">
+			    	<h3 class="cathead">SEARCH BY CATEGORY</h3>
+			    	<ul >
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/comfortfood.png" class="catimg">COMFORT FOOD
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/appetizers.png" class="catimg">APPETIZERS
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/cocktails.png" class="catimg">COCKTAILS
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/desserts.png" class="catimg">DESSERTS
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/lightandhealthy.png" class="catimg">LIGHT AND HEALTHY
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/maindishes.png" class="catimg">MAIN DISHES
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/mezztop20.png" class="catimg">TOP 20 RECIPES
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/pizzas.png" class="catimg">PIZZA
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/quickandeasy.png" class="catimg">QUICK AND EASY
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/salads.png" class="catimg">SALADS
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/sides.png" class="catimg">SIDES
+				    		</a>
+			    		</li>
+			    		<li >
+				    		<a href="#" class="catlink">
+				    			<img src="images/sandwiches.png" class="catimg">SANDWICHES
+				    		</a>
+			    		</li>
+			    	</ul>
+			    </div>
+			    <div class="clear"></div>
+			    <div class="popular">
+					<h2>Most Popular Recipes</h2>
+					<div  class="popularrec">
+						<div class="panel">
+							<img src="images/img1.png">
+							<p class="whiteboxlink">Artichoke & Green Olive Tapenade</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img1.png">
+							<p class="whiteboxlink">Sun-Dried Tomato Tapenade</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img2.jpg">
+							<p class="whiteboxlink">Tuscan Bean Salad</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img3.jpg">
+							<p class="whiteboxlink">&#34;The Balboa&#34; (aka the Italian Philly) (Make That Sandwich 2010 Winner)</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="clear"></div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img4.jpg">
+							<p class="whiteboxlink">White Christmas Martini</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img5.jpg">
+							<p class="whiteboxlink">Kona Po&#39; Boy (Make That Sandwich 2009 Finalist)</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img6.png">
+							<p class="whiteboxlink">Pesto & Roasted Pepper Pizza with Blue Cheese Olives</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="popularrec">
+						<div class="panel">
+							<img src="images/img7.jpg">
+							<p class="whiteboxlink">Ultimate Antipasto Platter</p>
+							<span>See Recipe</span>
+						</div>	
+						<h5 class="rechead" >Recipe</h5>				
+					</div>
+					<div class="clear"></div>
+				</div>
+
+			</div>
+			
+			<div class="clear"></div>
+			<div id="footer">
+				<div id="nav">
+					<ul>
+						<li><a href="#">RECIPES</a></li>
+						<li><a href="#">OUR PRODUCTS</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+					<ul class="second">
+						<li><a href="#">Shipping Information</a></li>
+						<li><a href="#">Shopping Information</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div id="copy">
+					<p style="float:left;margin:0 0 0 410px;font-family:'Trebuchet MS';">Designed By: Jaskaran Singh</p>
+				</div>
+				<div class="sitedesign">
+					<a href="#" id="link">Citizen Group</a>
+				</div>
+			</div>
+	</body>
+</html>

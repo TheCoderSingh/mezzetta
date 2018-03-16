@@ -1,0 +1,263 @@
+<html>
+	<head>
+		<title>Mezzetta.com | Don't Forgetta Mezzetta</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet"  href="slider/src/css/lightslider.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    	<script src="slider/src/js/lightslider.js"></script> 
+    	<script>
+    		$(document).ready(function() {
+				$("#content-slider").lightSlider({
+	                loop:true,
+	                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+			});
+    	</script>
+	</head>
+	<body>
+		<div id="greybar"></div>
+		<div id="topbar">
+			<div id="shopbtn">
+				<a href="#"><img src="images/shop-btn.png"></a>
+			</div>
+			<div id="social">
+				<div id="fbicon">
+					<img src="images/facebook-icon.png">
+				</div>
+				<div class="socitext">
+					<a href="#">Like Us &#187;</a>
+				</div>
+				<div id="twicon">
+					<img src="images/twitter-icon.png">
+				</div>
+				<div class="socitext">
+					<a href="#">Follow Us &#187;</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="logo">
+				<a href="index.html"><img src="images/main-logo.png" style="float: left;"></a>	
+			</div>
+			<div id="topright">
+				<div class="tright">
+					<img src="images/feature-product-title.png">
+					<p id="bannertext">FEATURE PRODUCT</p>
+					<p id="toprighthead">Marinara</p>
+					<p id="toprightpara">Pasta, perfected. When you use the<br> world&#8217;s best tomatoes, you don&#8217;t<br>need much more. That&#8217;s why...</p>
+					<p id="toplink"><a href="#">GET TIPS & RECIPES ></a></p>
+				</div>
+				<div id="topimage">
+					<img src="images/286-Premium-Marinara-prod_65_104.png">
+				</div>
+			</div>
+		</div>
+		<div id="outermenu">
+				<div id="innermenu">
+			    	<div id="mymenu">
+			        	<ul style="left: -13px;">
+				        	<li><a href="recipes.html">RECIPES</a>
+				            	<ul>
+				                	<li>
+				                   		<a href="#">Recipes</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Tips</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Antipasti</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Pairings</a>
+				                    </li>
+				                </ul>
+			                </li>
+			            <li><a href="ourproducts.html" style="line-height:25px;padding-top: 10px;padding-left:25px;height: 58px;text-align:left;width: 120px;">OUR PRODUCTS</a></li>
+			            <li><a href="aboutus.html">ABOUT US</a>
+			            	<ul>
+				                	<li>
+				                   		<a href="#">About Us</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Our Brands</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Our History</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Mezetta & Health</a>
+				                    </li>
+				                    <li>
+				                    	<a href="#">Careers</a>
+				                    </li>
+				                </ul>
+			            </li>
+			            <li><a href="contact.html">CONTACT</a>
+
+			            	<ul>
+				                	<li>
+				                   		<a href="#">Contact</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Press Room</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">Win a Free Gift Basket!</a>
+				                    </li>
+				                    <li>
+				                   		<a href="#">FAQs</a>
+				                    </li>
+				                </ul>
+			            </li>
+			          </ul>
+			        </div>
+			    <div id="searchbox">
+			    	<form>
+			    		<input type="text" placeholder="Enter a keyword here" class="search">
+			    		<input type="submit" value="GO" class="gobutton">
+			    		<div class="searchboxb">
+			    			<span class="searchpara">SEARCH:</span>
+			    			<input type="radio" name="radio1"><span class="searchpara">Products</span>
+			    			<input type="radio" name="radio1"><span class="searchpara">Recipes</span>
+			    		</div>
+			    	</form>
+			    </div>
+			    <div class="clear"></div>
+	    		</div>
+			</div>
+			<div id="outercontent">
+				<div id="innercontent">
+					<div id="myslide">
+						<div class="demo">
+					        <div class="item">            
+					            <div class="clearfix">
+					                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+					                    <li data-thumb="slider/img/thumb/beach_hp_85_55_c1.jpg"> 
+					                        <img src="slider/img/beach_hp_884_411_80.jpg" />
+					                    </li>
+					                    <li data-thumb="slider/img/thumb/JalapenoBurger_HP_85_55_c1.jpg"> 
+					                        <img src="slider/img/JalapenoBurger_HP_884_425_80.jpg" />
+					                    </li>
+					                    <li data-thumb="slider/img/thumb/quote_HP_85_55_c1.jpg"> 
+					                        <img src="slider/img/quote_HP_884_425_80.jpg" />
+					                    </li>
+					                </ul>
+					            </div>
+					        </div>
+					    </div>
+				    </div>
+				</div>
+			</div>
+		    <div id="outercontent">
+				<div id="innercontent">
+					<div id="threeboxes">
+						<div class="whiteboxes">
+							<div id="whiteone">
+								<div class="bannertext">
+									TIPS & PAIRING
+								</div>
+								<div class="bannerimg">
+									<img src="images/MZ_HomepagePromo_Tips_v02_1.jpg">
+								</div>
+								<div class="bannerpara">
+									<p class="bpara">Have a Mezzetta product and wondering what else you could do with it? Discover oodles of great tips and pairings in our idea center.</p>
+								</div>
+							</div>
+						</div>
+						<div class="whiteboxes">
+							<div id="whitetwo">
+								<div class="bannertext">
+									RECIPES
+								</div>
+								<div class="bannerimg">
+									<img src="images/KalamataPlatter_homebox.jpg">
+								</div>
+								<div class="bannerpara">
+									<p class="bpara">Looking for more inspirational ways to use Mezzetta products? Explore our recipe catalogue.</p>
+								</div>
+							</div>
+						</div>
+						<div class="whiteboxes" style="margin-right:0px;">
+							<div id="whitethree">
+								<div class="bannertext">
+									CONNECTION
+								</div>
+								<div class="bannerimg">
+									<img src="images/social_media_group_cropped.jpg">
+								</div>
+								<div class="bannerpara">
+									<p class="bpara">Hungry for a daily dash of delicious recipes, tipsand ideas? Follow us on <span class="link">Facebook</span>, <span class="link">Twitter</span>, <span class="link">Instagram</span>, <span class="link">Pinterest</span> and <span class="link">YouTube!</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div id="greybg">
+				<div id="bottomcont">
+					<div id="bottomltext">
+						<p id="bottomhead">Mezzetta VIP</p>
+						<p id="bottomtext">Join the club and get exclusive<br>recipes, discounts and more!</p>
+					</div>
+					<div id="input">
+						<form>
+							<input type="text" id="inptext" placeholder="Full Name" style="padding-left: 10px;">
+							<input type="text" id="inptext" placeholder="Email" style="padding-left: 10px;">
+							<input type="submit" value="SUBMIT" id="submitbutton">
+						</form>
+					</div>
+					<div id="quickbox">
+						<h5 class="head_5">Quick Tip</h5>
+						<div id="quicktip">
+							<div style=" min-height: 100px; padding: 7px 18px 20px 14px; color: #85827e;">
+								<h5 class="head_5bg">QUICK TIP</h5>
+    							<h6 class="head_6bg">#236</h6>
+    							<p class="tippara">Warm the Appetizer Olives up and serve at your next get together for a restaurant-style appetizer at home.</p>
+							</div>
+						</div>
+						<a href="#" class="link tiplink">More Tips ></a>
+					</div>
+				</div>
+				<div class="fb"></div>
+				<div class="clear"></div>
+
+			</div>
+			<div class="clear"></div>
+			<div id="footer">
+				<div id="nav">
+					<ul>
+						<li><a href="#">RECIPES</a></li>
+						<li><a href="#">OUR PRODUCTS</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+					<ul class="second">
+						<li><a href="#">Shipping Information</a></li>
+						<li><a href="#">Shopping Information</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">FAQs</a></li>
+					</ul>
+				</div>
+				<hr>
+				<div id="copy">
+					<p class="copypara">Designed By: Jaskaran Singh</p>
+				</div>
+				<div class="sitedesign">
+					<a href="#" id="link">Citizen Group</a>
+				</div>
+			</div>
+    	</div>
+	</body>
+</html>
